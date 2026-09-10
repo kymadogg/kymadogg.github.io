@@ -16,12 +16,10 @@
 title: K Herbstzuber
 email: kmhswimgirl@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
-twitter_username: username
+  K Herbstzuber's blog + project portfolio site. 
+#twitter_username: username
 github_username: kymadogg
-minimal_mistakes_skin: default
+minimal_mistakes_skin: dark
 search: true
 
 # Build settings
@@ -60,29 +58,29 @@ plugins:
 author:
   name   : "K Herbstzuber"
   avatar : "/assets/images/bio-photo.jpg"
-  bio    : "My awesome biography constrained to a sentence or two goes here."
+  bio    : "Robotics Software Dev & PCB Designer"
   links:
-    - label: "Website"
-      icon: "fas fa-fw fa-link"
-      url: "https://"
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/"
+    # - label: "Website"
+    #   icon: "fas fa-fw fa-link"
+    #   url: "https://"
+    # - label: "Twitter"
+    #   icon: "fab fa-fw fa-twitter-square"
+    #   url: "https://twitter.com/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/kymadogg"
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      url: "https://instagram.com/"
+    - label: "YouTube"
+      icon: "fab fa-fw fa-youtube"
+      url: "https://instagram.com/kymadogg"
 
 footer:
   links:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/kymadogg"
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      url: "https://instagram.com/"
+    - label: "YouTube"
+      icon: "fab fa-fw fa-youtube"
+      url: "https://instagram.com/kymadogg"
 
 defaults:
   # _posts
@@ -93,7 +91,7 @@ defaults:
       layout: single
       author_profile: true
       read_time: true
-      comments: true
+      comments: false
       share: true
       related: true
   # _pages
@@ -103,6 +101,11 @@ defaults:
     values:
       layout: single
       author_profile: true
+
+collections:
+  portfolio:
+    output: true
+    permalink: /portfolio/:path/
 
 category_archive:
   type: liquid
