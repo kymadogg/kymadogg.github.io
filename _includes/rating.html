@@ -1,0 +1,18 @@
+{% assign rating = include.rating | default: page.rating %}
+{% assign rating_max = page.rating_max | default: 5 %}
+
+<div class="post-rating" aria-label="{{ rating }} out of {{ rating_max }}">
+  {% for number in (1..rating_max) %}
+    <a
+      href="/misc/?rating={{ number }}#caffine-rating"
+      class="rating-link"
+      aria-label="Rate {{ number }} stars"
+    >
+      <img
+        src="{{ page.rating_icon | relative_url }}"
+        alt=""
+        class="{% if number > rating %}rating-empty{% endif %}"
+      >
+    </a>
+  {% endfor %}
+</div>
