@@ -1,5 +1,5 @@
 ---
-title: GitHub
+title: Projects
 layout: collection
 permalink: /portfolio/
 collection: portfolio
@@ -7,4 +7,4 @@ entries_layout: grid
 classes: wide
 ---
 
-Links to my repositories.
+My projects + their GitHub repositories

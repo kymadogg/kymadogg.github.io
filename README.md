@@ -1,5 +1,4 @@
-# K's website
-
+# kymadogg.github.io
 Hopefully I will not forget this exists later.
 
 ## File + Folder Guide 

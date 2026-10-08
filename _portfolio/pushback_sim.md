@@ -1,6 +1,6 @@
 ---
 title: "pushback_sim"
-excerpt: "A Gazebo Simulation of the 2025-26 VRC game."
+excerpt: "The 2025-26 V5RC game in Gazebo Sim"
 blog_url: "/wpi/mqp/"
 github_url: "https://github.com/Autonomous-vexu/pushback_sim"
 header:

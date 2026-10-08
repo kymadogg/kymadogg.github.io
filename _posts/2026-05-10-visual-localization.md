@@ -1,8 +1,8 @@
 ---
 title: "Localization using a Webcam"
-#excerpt_separator: "<!--more-->"
+excerpt_separator: "<!--more-->"
 categories:
-  - Blog
+  - Side Quests
 tags:
   - robotics
   - hackathoned

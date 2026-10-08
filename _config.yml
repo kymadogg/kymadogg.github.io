@@ -58,7 +58,7 @@ plugins:
 author:
   name   : "K Herbstzuber"
   avatar : "/assets/images/bio-photo.jpg"
-  bio    : "Robotics Software Dev & PCB Designer"
+  bio    : "Robotics Software Developer"
   links:
     # - label: "Website"
     #   icon: "fas fa-fw fa-link"
