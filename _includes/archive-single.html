@@ -1,0 +1,51 @@
+{% assign locale = include.locale | default: site.locale %}
+{% if post.header.teaser %}
+  {% assign teaser = post.header.teaser %}
+{% else %}
+  {% assign teaser = site.teaser %}
+{% endif %}
+
+<div class="{{ include.type | default: 'list' }}__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    {% if include.type == "grid" and teaser %}
+      <div class="archive__item-teaser">
+        <img
+          src="{{ teaser | relative_url }}"
+          alt=""
+          style="object-position: {{ post.header.teaser_position | default: '50% 50%' }};"
+        >
+      </div>
+    {% endif %}
+
+    <h2 class="archive__item-title no_toc p-name" itemprop="headline">
+      {% if post.blog_url or post.github_url %}
+        {{ post.title }}
+      {% elsif post.link %}
+        <a href="{{ post.link }}">{{ post.title }}</a>
+      {% else %}
+        <a class="u-url" href="{{ post.url | relative_url }}" rel="permalink">{{ post.title }}</a>
+      {% endif %}
+    </h2>
+
+    {% if post.excerpt %}
+      <p class="archive__item-excerpt p-summary" itemprop="description">
+        {{ post.excerpt | markdownify | strip_html | truncate: 160 }}
+      </p>
+    {% endif %}
+
+    {% if post.blog_url or post.github_url %}
+      <div class="archive__item-actions">
+        {% if post.blog_url %}
+          <a class="archive__item-button" href="{{ post.blog_url | relative_url }}">
+            Blog
+          </a>
+        {% endif %}
+        {% if post.github_url %}
+          <a class="archive__item-button" href="{{ post.github_url }}">
+            GitHub
+          </a>
+        {% endif %}
+      </div>
+    {% endif %}
+  </article>
+</div>
