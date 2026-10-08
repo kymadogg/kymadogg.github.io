@@ -17,9 +17,7 @@ title: K Herbstzuber
 email: kmhswimgirl@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   K Herbstzuber's blog + project portfolio site. 
-#twitter_username: username
 github_username: kymadogg
-#minimal_mistakes_skin: dark
 search: true
 
 # Build settings
@@ -27,7 +25,7 @@ markdown: kramdown
 remote_theme: mmistakes/minimal-mistakes
 minimal_mistakes_skin: dark
 # Outputting
-permalink: /:categories/:title/
+permalink: /:title/
 paginate: 5 # amount of posts to show
 paginate_path: /page:num/
 timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
@@ -59,20 +57,20 @@ plugins:
 author:
   name   : "K Herbstzuber"
   avatar : "/assets/images/bio-photo.jpg"
-  bio    : "Robotics Software Developer"
+  bio    : "Robotics Software Developer <br> A.K.A. kymadogg"
   links:
-    # - label: "Website"
-    #   icon: "fas fa-fw fa-link"
-    #   url: "https://"
-    # - label: "Twitter"
-    #   icon: "fab fa-fw fa-twitter-square"
-    #   url: "https://twitter.com/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/kymadogg"
     - label: "YouTube"
       icon: "fab fa-fw fa-youtube"
-      url: "https://instagram.com/kymadogg"
+      url: "https://youtube.com/kymadogg"
+    - label: "GitLab"
+      icon: "fab fa-fw fa-gitlab"
+      url: "https://gitlab.com/kymadogg"
+    - label: "Docker Hub"
+      icon: "fab fa-fw fa-docker"
+      url: "https://hub.docker.com/u/kymadogg"
 
 footer:
   links:
@@ -81,7 +79,13 @@ footer:
       url: "https://github.com/kymadogg"
     - label: "YouTube"
       icon: "fab fa-fw fa-youtube"
-      url: "https://instagram.com/kymadogg"
+      url: "https://youtube.com/kymadogg"
+    - label: "GitLab"
+      icon: "fab fa-fw fa-gitlab"
+      url: "https://gitlab.com/kymadogg"
+    - label: "Docker Hub"
+      icon: "fab fa-fw fa-docker"
+      url: "https://hub.docker.com/u/kymadogg"
 
 defaults:
   # _posts
