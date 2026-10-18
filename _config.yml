@@ -56,7 +56,7 @@ plugins:
 
 author:
   name   : "K Herbstzuber"
-  avatar : "/assets/images/bio-photo.jpg"
+  avatar : "/assets/images/bio-photo.png"
   bio    : "Robotics Software Developer <br> A.K.A. kymadogg"
   links:
     - label: "GitHub"
