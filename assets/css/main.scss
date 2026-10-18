@@ -1,7 +1,7 @@
 ---
 ---
 
-@import "minimal-mistakes/skins/dark";
+@import "minimal-mistakes/skins/dark"; //ignore
 @import "minimal-mistakes";
 
 .entries-grid {
@@ -96,24 +96,24 @@
   }
 }
 
-.author__avatar {
-  position: relative;
-  width: 150px;
-  height: 150px;
-  overflow: hidden;
-  border-radius: 50%;
-}
+// .author__avatar {
+// //   position: relative;
+//   // width: 200px;
+//   // height: 200px;
+//   //  overflow: hidden;
+//   //  border-radius: 50%;
+// }
 
-// DO NOT EDIT EVER
-.author__avatar img {
-  position: absolute;
-  top: -10%;
-  left: -100%;
-  width: 260%;
-  height: 260%;
-  max-width: none;
-  object-fit: cover;
-}
+// // DO NOT EDIT EVER
+// .author__avatar img {
+//   position: absolute;
+//   top: -10%;
+//   left: -100%;
+//   width: 260%;
+//   height: 260%;
+//   max-width: none;
+//   object-fit: cover;
+// }
 
 .post-rating {
   display: flex;
