@@ -1,0 +1,61 @@
+<div class="text-marquee" aria-label="Programming languages I know">
+  <div class="text-marquee__track">
+    <div class="text-marquee__group">
+      <span>Python</span><span>JavaScript</span><span>TypeScript</span>
+      <span>C/C++</span><span>Rust</span><span>Next.js</span>
+    </div>
+    <div class="text-marquee__group" aria-hidden="true"></div>
+  </div>
+</div>
+
+<style>
+  .text-marquee {
+    font-family: 'Courier New', Courier, monospace;
+    overflow: hidden;
+    white-space: nowrap;
+    background: #222;
+    color: #fff;
+    padding: 0.65rem 0;
+  }
+
+  .text-marquee__track {
+    display: flex;
+    width: max-content;
+    animation: marquee-scroll 30s linear infinite;
+  }
+
+  .text-marquee__group {
+    display: flex;
+    flex: 0 0 auto;
+    gap: 2rem; /* space between languages */
+    padding-right: 2rem;
+  }
+
+  @keyframes marquee-scroll {
+    to { transform: translateX(-50%); }
+  }
+
+  .text-marquee:hover .text-marquee__track {
+    animation-play-state: paused;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .text-marquee__track { animation: none; }
+  }
+</style>
+
+<script>
+  document.querySelectorAll(".text-marquee").forEach((marquee) => {
+    const track = marquee.querySelector(".text-marquee__track");
+    const group = marquee.querySelector(".text-marquee__group");
+    const copy = marquee.querySelector('[aria-hidden="true"]');
+
+    // Repeat the sequence until one group is wider than the visible bar.
+    while (group.scrollWidth < marquee.clientWidth * 1.5) {
+      [...group.children].forEach((item) => group.append(item.cloneNode(true)));
+    }
+
+    // Make the second group an exact copy so the loop has no seam.
+    copy.innerHTML = group.innerHTML;
+  });
+</script>
